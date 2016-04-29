@@ -48,7 +48,14 @@ module.exports = function(grunt) {
                 }
             }
         },
+        concat: {
+            dist: {
+                src: [],
+                dest: 'dist/built.js',
+            },
+        }
     });
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
