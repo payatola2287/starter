@@ -21,6 +21,7 @@
     "postcss-calc": "^5.2.0",
     "postcss-color-function": "^2.0.0",
     "postcss-scss": "^0.1.7",
-    "precss": "^1.4.0"
+    "precss": "^1.4.0",
+    "webpack": "^1.13.1"
   }
 }
