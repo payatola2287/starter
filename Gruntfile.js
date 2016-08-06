@@ -5,10 +5,6 @@ module.exports = function(grunt) {
             A: {
                 files: ['src/css/*.css','src/*.css'],
                 tasks: ['default']
-            },
-            B: {
-                files: ['src/js/*.js','src/*.js'],
-                tasks: ['minimize']
             }
         },
         postcss: {
@@ -48,6 +44,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("css-mqpacker");
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.registerTask('default', ['postcss:dist','cssmin']);
-    grunt.registerTask('minimize', ['uglify:flat']);
 
 };
