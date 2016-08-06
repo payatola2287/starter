@@ -3,11 +3,11 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             A: {
-                files: ['css/pre/main.css'],
+                files: ['src/css/*.css','src/*.css'],
                 tasks: ['default']
             },
             B: {
-                files: ['js/main.js'],
+                files: ['src/js/*.js','src/*.js'],
                 tasks: ['minimize']
             }
         },
@@ -26,8 +26,8 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-                src: 'css/pre/main.css',
-                dest: 'css/main.css'
+                src: 'src/css/main.css',
+                dest: 'dist/style.css'
             }
         },
         cssmin: {
@@ -40,23 +40,8 @@ module.exports = function(grunt) {
                     ext: '.min.css'
                 }]
             }
-        },
-        uglify: {
-            flat: {
-                files: {
-                    'js/main.min.js': ['js/main.js']
-                }
-            }
-        },
-        concat: {
-            dist: {
-                src: [],
-                dest: 'dist/built.js',
-            },
         }
     });
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks("css-mqpacker");
