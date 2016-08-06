@@ -15,8 +15,5 @@
     <body>
         <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
         <script src="dist/bundle.js"></script>
-        <script>
-            <!-- JS on the page -->
-        </script>
     </body>
 </html>
