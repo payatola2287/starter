@@ -1,7 +1,7 @@
 {
-  "name": "tork",
+  "name": "starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Starter files for every project that I have",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
